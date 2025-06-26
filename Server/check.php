@@ -16,3 +16,4 @@ $licenses = [
 $site = $_GET['site'] ?? '';
 
 echo $licenses[$site] ?? 'inactive';
+
