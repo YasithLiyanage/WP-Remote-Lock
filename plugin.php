@@ -8,7 +8,7 @@ Author URI: https://YasithLiyanage.com
 */
 
 add_action('init', function () {
-    $check = wp_remote_get('https://YasithLiyanage.me/check.php?site=' . $_SERVER['HTTP_HOST']);
+    $check = wp_remote_get('https://Your-license-server.com/check.php?site=' . $_SERVER['HTTP_HOST']);
 
     if (!is_wp_error($check)) {
         $status = trim(wp_remote_retrieve_body($check));

@@ -10,7 +10,7 @@ Author URI: https://YasithLiyanage.com
 */
 
 add_action('init', function () {
-    $check = wp_remote_get('https://YasithLiyange.me/check.php?site=' . $_SERVER['HTTP_HOST']);
+    $check = wp_remote_get('https://Your-License-Server.com/check.php?site=' . $_SERVER['HTTP_HOST']);
 
     if (!is_wp_error($check)) {
         $status = trim(wp_remote_retrieve_body($check));
